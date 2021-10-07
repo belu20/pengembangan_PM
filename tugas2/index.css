@@ -1,0 +1,26 @@
+body {
+    background: #3c8DAD; 
+}
+.container {
+    width: 30%;
+    margin-top: 9%;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.4);
+    padding: 40px;
+    background: white;
+}
+
+.container input {
+    width: 100%;
+}
+
+p {
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 25px;
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <title>Disney Land</title>
+  </head>
+  <script>
+      const disney=()=> {
+        let umur = document.getElementById('umur').value;
+           let tinggi = document.getElementById('tb').value;
+
+           if(umur === ""){
+               return alert("Anda Belum Memasukan umur dan tinggi")
+           }else {
+               if(umur < 1 && tinggi < 30) {
+                   return alert('Dilarang masuk');
+               }else if(umur >= 1 && umur <= 3 && tinggi < 70) {
+                   return alert(`Tarif Anda Rp.${30000}`)
+               }else if(umur >= 2 && umur <= 3 && tinggi > 70) {
+                   return alert(`Tarif Anda Rp.${30000} + ${10000} = Rp.${30000 + 10000}`)
+               }else if(umur < 7 && tinggi <= 120) {
+                   return alert(`Tarif Anda Rp.${40000}`)
+               }else if(umur >= 4 && umur <= 7 && tinggi > 120) {
+                   return alert(`Tarif Anda Rp.${40000} + Rp.${15000} = Rp.${40000 + 15000}`)
+               }else if(umur < 10 && tinggi <= 150) {
+                   return alert(`Tarif Anda Rp.${50000}`)
+               }else if(umur >= 8 && umur <= 10 && tinggi > 150) {
+                   return alert(`Tarif Anda Rp.${50000} + Rp.${20000} = Rp.${50000 + 20000}`)
+               }else {
+                   return alert(`Tarif Anda ${80000}`)
+               }   
+           }
+           document.getElementById("result").innerHTML = umur;
+           document.getElementById("result").innerHTML = tinggi;
+        }
+      
+  </script>
+  <body>
+      <div class="container">
+            <h4 class="text-center"> </h4>
+            <hr>
+                <div class="form-grup">
+                    <table>
+                        <tr>
+                            <td><p>Umur</p></td>
+                            <td><input type="text" name="Umur" class="form-control" id="umur"></td>
+                        </tr>
+                        <tr>
+                            <td><p>Tinggi Badan</p></td>
+                            <td><input type="text" name="tb" class="form-control" id="tb"></td>
+                        </tr>
+                    </table>
+                    
+                </div> 
+                <br>
+                <input type="button" onclick="disney()" value="button">
+                
+        </div> 
+  </body>
+</html>
