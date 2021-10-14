@@ -16,4 +16,4 @@ if (aktivitas1=='lari' || aktivitas2 =='pushup' || aktivitas3 =='plank') {
 }else {
     
 }
-console.log(kaloriyangdibakar);
+console.log(`kalori yang dibakar :${kaloriyangdibakar}`);
