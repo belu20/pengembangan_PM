@@ -21,6 +21,7 @@ let dataSiswa = [
         }
     },
 ];
+
 let program = []
 let data = []
 let text1 = "'Lulus Programming :'"
@@ -31,12 +32,18 @@ for (let i=0; i<dataSiswa.length; i++){
     
     if (value1 > 70) {
         program.push(dataSiswa[i].nama)
-    }else if (value2 > 70) {
+    }else{
+        
+    }
+    
+    if (value2 > 70) {
         data.push(dataSiswa[i].nama)
     }
     else{
       
     }
 }
+
+
 console.log(text1, program);
 console.log(text2, data);
